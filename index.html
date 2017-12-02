@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>FREECODECAMP exercise: Build a JavaScript Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="apple-touch-icon-precomposed" href="https://s3.amazonaws.com/web-1665/5.+Build+a+Wikipedia+Viewer/favicon.png">
+    <link rel="shortcut icon" href="https://s3.amazonaws.com/web-1665/5.+Build+a+Wikipedia+Viewer/favicon.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900" rel="stylesheet">
+</head>
+
+<body>
+<!--^ exclude in codepen ^-->
+
+<div id="wrapper">
+
+
+  <header id="header">
+    <div id="logo">
+      <a href="https://www.freecodecamp.com/mickelmetekohy" title="FreeCodeCamp Mickel Metekohy" target="_blank">
+        <img src="https://s3.amazonaws.com/web-1665/5.+Build+a+Wikipedia+Viewer/freecodecamp_logo.svg" alt="free code camp logo" height="40">
+      </a>
+    </div>
+    <h1 id="title">Calc</h1>
+  </header>
+
+  <main>
+
+      <div id="calc-display" class="row">
+        <span id="display-label"></span>
+        <span id="display">0</span>
+
+        <div class="info-btn-container single-btn">
+            <label class="info btn"><input type="checkbox" name="info" value="info">
+              <div id="info">
+                <div class="inner-info">
+                  <div class="social">
+                    <a href="https://twitter.com/mickelmetekohy" class="tweet btn"><span class="sr-only">Twitter</span></a>
+                    <a href="https://github.com/MickelMetekohy" class="github btn"><span class="sr-only">Github</span></a>
+                    <a href="https://www.linkedin.com/in/mickel-metekohy-31105865" class="linkedin btn"><span class="sr-only">LinkedIn Quote</span></a>
+                    <span class="exit btn"><span class="sr-only">Exit Info</span></span>
+                  </div>
+                  <div class="copy">
+                    <p>#FreeCodeCamp Exersize:<br>Build a JavaScript Calculator.</p>
+                  </div>
+                  <div class="fcc">
+                    <a href="https://www.freecodecamp.com/demikeison" title="FreeCodeCamp Mickel Metekohy" target="_blank">
+                      <img src="https://s3.amazonaws.com/web-1665/5.+Build+a+Wikipedia+Viewer/freecodecamp_logo.svg" alt="free code camp logo" height="40">
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </label>
+          </div>
+      </div>
+
+      <div id="calc-btns" class="row">
+        <div id="calc-row-1" class="row">
+          <button type="button" id="ac-ce" class="" value="ac" title="All Clear"><span>AC</span></button>
+          <button type="button" id="plusminus" class="" value="+-"><span>+</span><span>/</span><span>-</span></button>
+          <button type="button" id="percent" class="" value="%"><span>%</span></button>
+          <button type="button" id="division" class="calc-ops-btn" value="/"><span>/</span></button>
+        </div>
+        <div id="calc-row-2" class="row">
+          <button type="button" id="one" class="calc-num-btn" value="1"><span>1</span></button>
+          <button type="button" id="two" class="calc-num-btn" value="2"><span>2</span></button>
+          <button type="button" id="three" class="calc-num-btn" value="3"><span>3</span></button>
+          <button type="button" id="multiplication" class="calc-ops-btn" value="*"><span>*</span></button>
+        </div>
+        <div id="calc-row-3" class="row">
+          <button type="button" id="four" class="calc-num-btn" value="4"><span>4</span></button>
+          <button type="button" id="five" class="calc-num-btn" value="5"><span>5</span></button>
+          <button type="button" id="six" class="calc-num-btn" value="6"><span>6</span></button>
+          <button type="button" id="subtraction" class="calc-ops-btn" value="-"><span>-</span></button>
+        </div>
+        <div id="calc-row-4" class="row">
+          <button type="button" id="seven" class="calc-num-btn" value="7"><span>7</span></button>
+          <button type="button" id="eight" class="calc-num-btn" value="8"><span>8</span></button>
+          <button type="button" id="nine" class="calc-num-btn" value="9"><span>9</span></button>
+          <button type="button" id="addition" class="calc-ops-btn" value="+"><span>+</span></button>
+        </div>
+        <div id="calc-row-5" class="row">
+          <button type="button" id="dot" class="" value="."><span>.</span></button>
+          <button type="button" id="zero" class="calc-num-btn" value="0"><span>0</span></button>
+          <button type="button" id="equals" class="" value="="><span>=</span></button>
+        </div>
+      </div>
+
+      <div id="calc-tape" class="row">
+        <span id="tape-label">Tape: </span>
+        <span id="tape"></span>
+      </div>
+
+      <div id="debug" class="row">
+        <div id="resultInputDisplay">resultInputDisplay: <span></span></div>
+        <div id="calcInput">calcInput: <span></span></div>
+        <div id="calcOps">calcOps: <span></span></div>
+        <div id="equalsBtnFlag">equalsBtnFlag: <span></span></div>
+        <div id="numBtnFlag">numBtnFlag: <span></span></div>
+        <div id="opsBtnFlag">opsBtnFlag: <span></span></div>
+        <div id="percentBtnFlag">percentBtnFlag: <span></span></div>
+      </div>
+
+  </main>
+
+</div>
+<!-- end #wrapper -->
+
+<!--v exclude in codepen v-->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
+    <script src="js/index.js"></script>
+</body>
+</html>

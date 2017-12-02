@@ -1,0 +1,11 @@
+{
+  "name": "calc",
+  "version": "1.0.0",
+  "description": "FREECODECAMP exercise: Build a JavaScript Calculator",
+  "main": "index.js",
+  "author": "Mickel Metekohy",
+  "license": "MIT",
+  "dependencies": {
+    "eslint": "^4.12.1"
+  }
+}
